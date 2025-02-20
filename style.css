@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 110%;
+}
+.Navbar{
+    background-color: rgb(167, 108, 62);
+    text-decoration: none;
+    width: 100%;
+    height: 10%;
+    
+}
+.container{
+    display: flex;
+    position: relative;
+    top: 20px;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    align-content: space-between;
+    color: azure;
+    font-size: 20px;
+    margin-left: 100px;
+    
+}
+
+.back{
+   background-image: url(assets/sergey-kotenev-EE5fXDE7ayI-unsplash.jpg);
+   width: 100%;
+   height: 80%;
+   background-size: cover;
+}
+h2{
+    color: azure;
+}
+.menu-section{
+    text-align: center;
+    padding: 50px;
+    /* background-color: rgb(186, 131, 90); */
+    background-color: rgb(236, 158, 98);
+}
+.menu-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.menu-item{
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 4px 8px  rgb(96, 72, 53);
+    text-align: center;
+    max-width: 250px;
+}
+img{
+    width: 100%;
+    border-radius: 10px ;
+}
+.details{
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    display: none;
+}
+.menu-item:hover .details{
+    transform: translateY(0);
+    display: list-item;
+   list-style: none;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.pic{
+   width: 300px;
+   height: 320px;
+   margin-left: 610px;
+}
+.info{
+    background-color: rgb(236, 158, 98);
+    background-size: cover;
+    color: azure;
+}
+.award{
+    background-color: rgb(236, 158, 98);
+    background-size: cover;
+    color: azure;
+}
+form{
+    background-color: rgb(236, 158, 98);
+    background-size: cover;
+    color: azure;
+    text-align: center;
+
+}
+button{
+    border: none;
+    background-color: rgb(234, 132, 37);
+    color: azure;
+    padding: 5px;
+    border-radius: 10px;
+    width: 150px;
+   
+}
+.contact{
+    background-color: rgb(236, 158, 98);
+    background-size: cover;
+    color: azure;
+}
+.footsec{
+    background-color: rgb(167, 108, 62);
+    height: 10%;
+    text-align: center;
+    color: azure;
+}
+/* Tablet View (1024x1366) */
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    nav {
+        padding: 15px;
+    }
+
+    .menu-item {
+        font-size: 18px;
+    }
+
+    .menu-item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .overlay-text {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 20px;
+    }
+}
+
+/* Mobile View (375x667 - iPhone SE) */
+@media screen and (max-width: 375px) {
+    body {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* prevent horizontal scroll */
+    }
+
+    .container {
+        display: flex;
+        position: relative;
+        width: 95%;
+        padding: 10px;
+        margin-top: 2px;
+    }
+
+    header {
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav {
+        padding: 10px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+
+    .menu-item {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .menu-item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .overlay-text {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 15px;
+        text-align: center;
+    }
+}
+
